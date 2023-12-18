@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--locomotive css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css">
+    <!--css-->
+    <link rel="stylesheet" href="./css/style.css"> 
+    <title>Web Globe India</title>
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--font inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!--icons-->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  </head>
+  <body>
+
+        <!--cursor-->
+        <div id="cursor" class="cursor">
+          <div class="ring">
+            <div><!--Border--></div>
+          </div>
+          <div class="ring">
+            <div><!--Pointer--></div>		
+          </div>
+        </div>
+
+               <!--header-->
+
+               <div class="header">
+                <a href="index.html" class="active"><i class="ph-fill ph-house"></i> </a>
+                <a href="about.html"> About Us </a>
+                <a href="work.html"> Work </a>
+                <a href="process.html"> Process </a>
+                <a href="blogs.html"> Blogs </a>
+                <a href="contact.html"> Contact Us </a>
+              </div>
+    
+            <!--header2-->
+    
+            <div class="header2">
+              <div class="home-cont" id="homeCont">
+                <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                <svg width="100%" height="100%" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+              </button>
+              </div>
+    
+              <div class="overflow-hidden">
+              <div class="menus">
+                <a href="index.html"> Home </a>
+                <a href="about.html"> About </a>
+                <a href="work.html"> Work </a>
+                <a href="blogs.html"> Blogs </a>
+                <a href="contact.html"> Contact Us </a>
+              </div>
+            </div>
+            </div>
+
+        <div id="main">
+
+            <!--section1-blogcontent-->
+
+            <div class="container section1-blogcontent">
+                <div class="row d-flex gap-5 gap-lg-0 ">
+                    <div class="col-12 col-lg-5 blog-heading gap-4 gap-lg-0">
+                        <h1> A Guide to Discovering and Resolving Duplicate Content Issues on Your Website</h1>
+
+                        <div class="uploader d-flex gap-3">
+                            <i class="ph ph-user"></i>
+                            <div class="about-uploader">
+                                <h5>By Web Globe India </h5>
+                                <p> December 4, 2023</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-7 blog-img">
+                        <img src="./images/blog1.jpg" class="img-fluid" width="100%" height="100%"> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="container blog-content2">
+                <div class="row gap-4">
+                    <div class="col-12">
+                        <p> In the fast-paced digital world, a website’s speed can make or break its success. Users expect lightning-fast loading times, and anything less can result in frustration and abandonment. While many factors influence a website’s performance, one often overlooked element is the choice of fonts. Yes, fonts can significantly impact your website’s page speed. In this blog post, we’ll delve into the relationship between fonts and page speed and provide insights on how to strike a balance between aesthetics and performance.</p>
+                    </div>
+
+                    <div class="col-12">
+                        <h3>The Role of Fonts in Web Design</h3>
+                        <p>Fonts play a crucial role in web design, shaping a website’s visual identity and conveying its message effectively. They can add personality and style to your site, making it more engaging and memorable. However, when it comes to web performance, a trade-off between aesthetics and speed must be carefully considered.</p>
+                    </div>
+
+                    <div class="col-12">
+                        <h3>The Font Loading Process</h3>
+                        <p>Before diving into the impact of fonts on page speed, it’s important to understand how fonts are loaded on a website. There are two primary methods:</p>
+                        <p><span>Local Fonts:</span> These are fonts that are installed on the user’s device. They load quickly because they are readily available. However, they limit your design options and may not provide a consistent experience across different devices and browsers.</p>
+                        <p><span>Web Fonts:</span> Web fonts are hosted on external servers, and your website fetches them as needed. This allows for a wider range of font choices and consistent design across platforms. However, this method can slow down your website if not optimized.</p>
+                    </div>
+
+                    <div class="col-12">
+                        <h3>How Fonts Affect Page Speed </h3>
+                        <p>Now, let’s explore how fonts impact your website’s page speed:</p>
+                        <p> <span>HTTP Requests: </span> Each web font you use requires an additional HTTP request to fetch it from an external server. The more fonts you use, the more requests are made, increasing the page load time.</p>
+                        <p> <span>File Size: </span> Web fonts can be relatively large files. When you load multiple fonts, especially if they come with multiple styles and weights, you increase the total page size, which can lead to slower loading times.</p>
+                        <p> <span>Render Blocking: </span> Web fonts are often render-blocking resources. This means that the browser won’t display your content until the necessary fonts have been downloaded and rendered. This delay can frustrate users.</p>
+                        <p> <span>Cross-Origin Requests: </span> Fetching fonts from different domains can lead to cross-origin requests, which can further slow down page loading.</p>
+                        
+                    </div>
+
+                    <div class="col-12">
+                        <h3>Finding the Right Balance </h3>
+                        <p>Balancing aesthetics and page speed is essential. Here are some tips to optimize fonts and maintain a speedy website:</p>
+                        <p> <span>Use System Fonts: </span> Consider using system fonts whenever possible. They load quickly because they are already installed on users’ devices.</p>
+                        <p> <span>Choose Web Fonts Wisely: </span> Select web fonts that are optimized for performance. Some fonts are designed to load faster than others.</p>
+                        <p> <span>Limit Font Variety: </span>  Use a limited number of fonts and font styles. Minimizing the variety will reduce the number of requests and file sizes.</p>
+                        <p> <span>Preload Fonts: </span> Use the preload attribute in your HTML to tell the browser to start fetching fonts early in the loading process.</p>
+                        
+                    </div>
+
+                    <div class="col-12">
+                        <h3>Conclusion</h3>
+                        <p>Fonts do indeed affect the page speed of your website, and striking the right balance between aesthetics and performance is essential. By making thoughtful choices in font selection and optimization, you can create a visually appealing website that loads quickly, satisfying both your users and search engines. Keep in mind that a faster website not only improves user experience but can also positively impact your search engine rankings and conversion rates.</p>
+                    </div>
+                </div>
+            </div>
+    
+        <!--footer-->
+
+        <div class="footer container">
+
+          <div class="project-btn">
+
+            <div class="dot-head mb-3">
+              <div class="circle-head">
+                <div class="dot"></div> <span> Share your creative ideas with us and get back beautiful designs that impress and engage. </span>
+              </div>
+            </div>
+            <a href="#!" class="button dark-button"> Let's <span> start</span> a project <i class="ph ph-arrow-up-right"></i> </a>
+          </div>
+
+          <hr> 
+          <div class="footer-bottom row gap-2 gap-lg-0">
+            <div class="col-12 col-lg-3">
+              <h5> India </h5>
+              <p><a href="#!">239, B-3, Spaze ITech Park, Sector 49, Gurugram, Haryana, India (122018) </a>  </p>
+            </div>
+
+            <div class="col-12 col-lg-3">
+              <h5> Start Coversation at </h5>
+              <p> <a href="#!"> info@webglobeindia.com</a></p>
+              <p> <a href="#!"> +91_6201329132</a></p>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <h5> © 2023 WGI Inc, All rights reserved. </h5>
+              <p> <a href="#!"> Privacy policy</a></p>
+            </div>
+
+            <div class="col-12 col-lg-1 social-link ">
+              <h5> Contact</h5>
+              <p> <a href="#!"> Mail </a></p>
+              <p> <a href="#!"> Instagram</a></p>
+              <p> <a href="#!"> linked In</a></p>
+              <p> <a href="#!"> Facebook </a></p>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+     <!--locomotive-->
+     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--script-->
+    <script src="./script/index.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
